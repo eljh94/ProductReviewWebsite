@@ -27,7 +27,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You will also see any errors in the console.
 
 ### `npm test`
 
@@ -36,7 +36,15 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm test:e2e`
 
-Launches the testcafe test runner using chrome. If you do not have chrome switch the browser in package.json to firefox.
+Launches the testcafe test runner using chrome. If you do not have chrome switch the browser in `package.json` to firefox or alike.
+
+### `npm run prettier`
+
+Runs prettier and formats any unprettified code.
+
+### `npm run compile`
+
+Compiles the typescript files and reports any compilation errors.
 
 ### `npm run build`
 
@@ -47,14 +55,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run prettier`
-
-Runs prettier and formats any unprettified code.
-
-### `npm run compile`
-
-Compiles the typescript files and reports any compilation errors.
 
 ## Automatic Scripts
 
