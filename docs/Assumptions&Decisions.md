@@ -8,6 +8,20 @@
 
 # Decisions
 
+## Frameworks
+
+Create React App
+
+- Create react app is an easy bootstrap tool to generate a quick UI
+- It comes configured with a test runner and integration testing library (RTL/Jest)
+- React is a Javascript library that helps you to build and scale user interfaces, I like it because it favours composability
+- Worth noting there are many great libraries that you can use, depends on business and customer needs, as well as performance and time-to-live considerations
+
+Typescript
+
+- I chose to use typescript to improve the tooling and scalability of the codebase
+- Type safety catches errors at compile time as opposed to run time, which can help catch bugs before it gets to the customer!
+
 ## Third party dependencies
 
 I used Material UI, Testcafe, Date fns, uuid and recharts as third party dependencies.

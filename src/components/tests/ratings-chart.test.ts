@@ -3,21 +3,12 @@ import { mapRatingsToColor, getRatingColor } from "../ratings-chart";
 
 describe("MapRatingsToColor util", () => {
   it("should do create the fill key", () => {
-    const res = mapRatingsToColor(ratingsResponse);
-    const keys = Object.keys(res);
-    expect(keys.includes("fill")).toBeTruthy();
-  });
-
-  it("should do create the name key", () => {
-    const res = mapRatingsToColor(ratingsResponse);
-    const keys = Object.keys(res);
-    expect(keys.includes("name")).toBeTruthy();
-  });
-
-  it("should do create the count key", () => {
-    const res = mapRatingsToColor(ratingsResponse);
-    const keys = Object.keys(res);
-    expect(keys.includes("count")).toBeTruthy();
+    const ratings = mapRatingsToColor(ratingsResponse);
+    ratings.map((rating) => {
+      expect(rating.count).not.toBeUndefined();
+      expect(rating.fill).not.toBeUndefined();
+      expect(rating.name).not.toBeUndefined();
+    });
   });
 });
 
