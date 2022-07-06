@@ -1,5 +1,5 @@
 export { RatingsChart } from "./ratings-chart";
-export { Comments } from "./comments";
+export { Reviews } from "./reviews";
 export { Loading } from "./loading";
 export { Tabs } from "./tabs";
 export { StarRating } from "./star-rating";

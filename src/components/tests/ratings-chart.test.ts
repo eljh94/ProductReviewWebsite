@@ -1,4 +1,4 @@
-import { ratingsResponse } from "config/static-reviews";
+import { ratingsResponse } from "config/static-data";
 import { mapRatingsToColor, getRatingColor } from "../ratings-chart";
 
 describe("MapRatingsToColor util", () => {

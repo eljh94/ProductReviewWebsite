@@ -13,7 +13,7 @@ class LandingPage {
     this.ratingInput = span.withAttribute("data-testid", "rating-input");
     this.showNameCheckbox = span.withAttribute("data-testid", "showName-checkbox");
     this.submitButton = button.withAttribute("data-testid", "submit-button");
-    this.commentsPage = div.withAttribute("data-testid", "comments-container");
+    this.commentsPage = div.withAttribute("data-testid", "reviews-container");
     this.trendsPage = div.withAttribute("data-testid", "trends-container");
     this.leaveReviewTab = button.withAttribute("data-testid", "tab-0");
     this.reviewsTab = button.withAttribute("data-testid", "tab-1");

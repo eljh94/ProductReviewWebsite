@@ -4,7 +4,7 @@ import { ReviewResponse } from "types";
 import { Loading } from "./loading";
 import { StarRating } from "./star-rating";
 
-interface CommentProps {
+interface ReviewsProps {
   reviews?: ReviewResponse[];
 }
 
@@ -17,10 +17,10 @@ const Container = styled(Paper)(({ theme }) => ({
 
 const anon = "Anonymous User";
 
-export const Comments = ({ reviews }: CommentProps) => {
-  if (!reviews) return <Loading message="Loading Comments" />;
+export const Reviews = ({ reviews }: ReviewsProps) => {
+  if (!reviews) return <Loading message="Loading Reviews" />;
   return (
-    <Container data-testid="comments-container" elevation={0}>
+    <Container data-testid="reviews-container" elevation={0}>
       {reviews.map((review) => (
         <Box
           margin="0 0 25px"

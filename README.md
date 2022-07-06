@@ -46,3 +46,9 @@ Runs prettier and formats any unprettified code.
 ### `npm run compile`
 
 Compiles the typescript files and reports any compilation errors.
+
+## Automatic Scripts
+
+### Precommit
+
+A precommit hook is configured to run prettier on all javascript and typescript files.

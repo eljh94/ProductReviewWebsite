@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Paper, Box, styled, Typography } from "@mui/material";
-import { Comments, RatingsChart, Tabs, ReviewForm } from "components";
-import { reviewsResponse, ratingsResponse } from "config/static-reviews";
+import { Reviews, RatingsChart, Tabs, ReviewForm } from "components";
+import { reviewsResponse, ratingsResponse } from "config/static-data";
 import { ReviewResponse, RatingResponse, TabsEnum } from "types";
 
 const TabsArray = [
@@ -26,7 +26,7 @@ export function LandingPage() {
     fetchRatings(ratingsResponse);
   }, []);
   return (
-    <Card aria-label="Product Review Landing Page">
+    <Card>
       <Box margin="4em" justifyContent="center" alignItems="center">
         <header>
           <Typography variant="h2">Product Review</Typography>
@@ -37,7 +37,7 @@ export function LandingPage() {
         </section>
         <section aria-labelledby={`tab-${tab}`}>
           {tab === TabsEnum.FORM && <ReviewForm />}
-          {tab === TabsEnum.REVIEWS && <Comments reviews={reviews} />}
+          {tab === TabsEnum.REVIEWS && <Reviews reviews={reviews} />}
           {tab === TabsEnum.TRENDS && <RatingsChart ratings={ratings} />}
         </section>
       </Box>
