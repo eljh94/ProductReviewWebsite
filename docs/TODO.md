@@ -53,3 +53,17 @@ Every good web application supports internationalisation! We should extend this 
 - We should extract our strings to a en.json file to begin with. (No hardcoded strings should remain).
 
 - Then we can generate other language files, this can be done in house or through an external CMS.
+
+## Performance
+
+- Bundle analysis should be done to identify areas where we can improve, e.g. date-fns and MUI would be good places to start.
+
+- Lazy loading! We could add analytics to our
+
+- Box component from MUI is not very performant, especially on re-renders. We could look to move away depending on what the team prefers and how much impact on the customer it is having. It would be good to do some analysis on this before moving away.
+
+## Error Reporting & Monitoring
+
+- We should add some error reporting and monitoring capabilities, we can use sentry, logrocket, rollbar, depending on whats best for the team. We should report all errors to the dashboard.
+
+- Unhandled errors should be reported to pagerduty and alert based on severity and frequency to those on call (if this site warrants it).
