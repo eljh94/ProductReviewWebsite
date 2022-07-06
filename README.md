@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This designs and creates a product review form, with a landing page.
+This designs and creates a product review site! Here a user can leave a review, view other reviews and see rating trends.
 
 ## Documentation
 
