@@ -8,6 +8,8 @@ Contains all relevant documentation to this codebase, with exception to the read
 
 This contains all the e2e fixtures, models, setup related to the end to end testing of this website.
 
+This has its own readme to help guide you through best practices.
+
 ## Source
 
 Contains the code!
