@@ -8,9 +8,18 @@ This designs and creates a product review site! Here a user can leave a review, 
 
 Check out the `/docs/` folder for all things documentation on this project.
 
+## System requirements
+
+- Node >= 14.0.0
+- npm >= 5.6
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs all the dependencies requried to run the application, tests and scripts locally.
 
 ### `npm start`
 
