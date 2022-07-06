@@ -21,7 +21,17 @@
     "test": "react-scripts test",
     "test:e2e": "testcafe chrome e2e/fixtures/landing-page.js",
     "prettier": "prettier '**/*.@(ts|js)?(x)' --write",
-    "compile": "tsc"
+    "compile": "tsc",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.@(ts|js)?(x)": [
+      "npm run prettier"
+    ],
+    "e2e/**/*.@(ts|js)?(x)": [
+      "npm run prettier"
+    ]
   },
   "browserslist": {
     "production": [
@@ -36,14 +46,16 @@
     ]
   },
   "devDependencies": {
-    "@types/uuid": "^8.3.4",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.42",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@types/uuid": "^8.3.4",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
     "testcafe": "^1.19.0"
   }
