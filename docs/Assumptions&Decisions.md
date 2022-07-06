@@ -58,3 +58,9 @@ uuid
 - not heavily maintained, needs to be reviewed
 - has an okay package score on [Snyk](https://snyk.io/advisor/npm-package/recharts) (needs review)
 - handy for generating unique ids - could move away once integrated with the server as may no longer be needed (I admit its probably overkill for the current state of this project)
+
+## Other
+
+- I decided to add a checkbox to allow the user to select whether their name would be publically posted on the review page. I know this wasn't a requirement but it is important!
+
+- I also obfuscated the email in the reviews response from the API - this is PII - and shouldn't be shown to the users. This could be omitted completely.

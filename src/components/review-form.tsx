@@ -23,18 +23,18 @@ export function ReviewForm() {
     <form onSubmit={handleFormSubmit}>
       <Box display="flex" flexDirection="column">
         <TextInput
-          title="Email"
-          onChange={(email) => setReview({ ...review, email })}
-          value={review.email}
-          sx={bottomMargin}
-          data-testid="email-input"
-        />
-        <TextInput
           title="Name"
           onChange={(name) => setReview({ ...review, name })}
           value={review.name}
           sx={bottomMargin}
           data-testid="name-input"
+        />
+        <TextInput
+          title="Email"
+          onChange={(email) => setReview({ ...review, email })}
+          value={review.email}
+          sx={bottomMargin}
+          data-testid="email-input"
         />
         <Typography>What did you think of our product?</Typography>
         <Rating
