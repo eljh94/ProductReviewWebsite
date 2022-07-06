@@ -31,6 +31,7 @@ Material UI
 - Widely used open source component library, that values performance and responsive design.
 - Highly supported and contributed to (no signs of sun setting)
 - Has a healthy package score on [Snyk](https://snyk.io/advisor/npm-package/@mui/material)
+- Uses css in js, which keeps the styling central to the JS files, it also is highly performant, can be scaled out and reused really nicely in large codebases. Sometimes its not highly performant for components that re-render a lot - so we should track this with custom data analytics and make sure our customer experience is good.
 
 Testcafe
 
