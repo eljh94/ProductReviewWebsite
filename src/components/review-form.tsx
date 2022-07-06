@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Rating, Checkbox, Button } from "@mui/material";
+import { Box, Rating, Checkbox, Button, Typography } from "@mui/material";
 import { TextArea, TextInput } from "components/form";
 import { LocalReview } from "types";
 
@@ -36,7 +36,7 @@ export function ReviewForm() {
           sx={bottomMargin}
           data-testid="name-input"
         />
-        What did you think of our product?
+        <Typography>What did you think of our product?</Typography>
         <Rating
           value={review.rating || 0}
           onChange={(_, rating) => setReview({ ...review, rating: rating || 0 })}
@@ -50,13 +50,13 @@ export function ReviewForm() {
           value={review.comment}
           data-testid="comment-input"
         />
-        <Box sx={bottomMargin}>
+        <Box display="flex" alignItems="center" sx={bottomMargin}>
           <Checkbox
             onChange={(_, showName) => setReview({ ...review, showName })}
             checked={review.showName}
             data-testid="showName-checkbox"
-          />{" "}
-          Include name on public review
+          />
+          <Typography>Include name on public review?</Typography>
         </Box>
       </Box>
       <Button data-testid="submit-button" variant="contained" aria-label="Submit" type="submit">

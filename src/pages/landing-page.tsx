@@ -28,14 +28,18 @@ export function LandingPage() {
   return (
     <Card aria-label="Product Review Landing Page">
       <Box margin="4em" justifyContent="center" alignItems="center">
-        <Typography variant="h2">Product Review</Typography>
-        <Typography>We appreciate you taking the time to leave a review below.</Typography>
-        <Tabs tab={tab} tabs={TabsArray} handleTabChange={(tab: TabsEnum) => setTab(tab)} />
-        <div aria-labelledby={`tab-${tab}`}>
+        <header>
+          <Typography variant="h2">Product Review</Typography>
+          <Typography>We appreciate you taking the time to leave a review below.</Typography>
+        </header>
+        <section>
+          <Tabs tab={tab} tabs={TabsArray} handleTabChange={(tab: TabsEnum) => setTab(tab)} />
+        </section>
+        <section aria-labelledby={`tab-${tab}`}>
           {tab === TabsEnum.FORM && <ReviewForm />}
           {tab === TabsEnum.REVIEWS && <Comments reviews={reviews} />}
           {tab === TabsEnum.TRENDS && <RatingsChart ratings={ratings} />}
-        </div>
+        </section>
       </Box>
     </Card>
   );
