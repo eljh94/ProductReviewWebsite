@@ -67,3 +67,7 @@ Every good web application supports internationalisation! We should extend this 
 - We should add some error reporting and monitoring capabilities, we can use sentry, logrocket, rollbar, depending on whats best for the team. We should report all errors to the dashboard.
 
 - Unhandled errors should be reported to pagerduty and alert based on severity and frequency to those on call (if this site warrants it).
+
+## Accessibility Audit
+
+We should get a professional firm to perform an accessibility audit on the website, to see if we are meeting the WCAG Guidelines and Standards. There are websites that can scan it for you, depending on the user base and amount of traffic the site will get, it might be worth investing in having a third party conduct a audit for us.
