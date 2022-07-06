@@ -2,7 +2,7 @@
 
 ## General
 
-- Extend the checkout.com eslint package (assuming there is one) and setup in this webapp to apply the rules. Add to precommit hook and git hooks.
+- Extend the frontends eslint package (assuming there is one) and setup in this webapp to apply the rules. Add to precommit hook and git hooks.
 
 - Hook up to an actual API! I have just used static data, the format of which was an assumption. Ideally there would be shared or generated types from the backend, to enforce type safety and help catch breaking changes.
 
