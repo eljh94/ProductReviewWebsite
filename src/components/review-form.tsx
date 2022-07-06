@@ -44,7 +44,7 @@ export function ReviewForm() {
           data-testid="rating-input"
         />
         <TextArea
-          title="Add Comment"
+          title="Add a Comment"
           sx={bottomMargin}
           onChange={(comment) => setReview({ ...review, comment })}
           value={review.comment}
