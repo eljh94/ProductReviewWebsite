@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "product-review-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:e2e": "testcafe chrome e2e/fixtures/landing-page.js",
+    "prettier": "prettier '**/*.@(ts|js)?(x)' --write",
     "compile": "tsc"
   },
   "browserslist": {
