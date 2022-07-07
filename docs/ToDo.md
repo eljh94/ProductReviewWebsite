@@ -8,6 +8,8 @@
 
 - Add validation to the form, we should check the user is adding a valid email. We should also santise the inputs for any nasty characters to protect from any security attacks.
 
+- Add proper error handling and loading states, especially once its hooked up to the API and is asynchronous. We can have a nice loading animation (spinner and some text maybe). And then nice error handling for any server / user error (a toast or a message that provides some details on what went wrong and what to do next).
+
 ## Git Hooks
 
 Git hooks are a efficient and great way to catch errors before we merge our changes to the main branch for deployment.
